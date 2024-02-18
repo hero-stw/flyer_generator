@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "SVN-BEBAS_BOLD";
-  src: url("./fonts/SVN-BEBAS_NEUE_BOLD.otf");
+  src: url("./assets/fonts/SVN-BEBAS_NEUE_BOLD.otf");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: "SVN-BEBAS";
-  src: url("./fonts/SVN-BEBAS_NEUE_REGULAR.otf");
+  src: url("./assets/fonts/SVN-BEBAS_NEUE_REGULAR.otf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
