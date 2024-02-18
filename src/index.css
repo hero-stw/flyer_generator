@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "SVN-BEBAS_BOLD";
+  src: url("../public/assets/fonts/SVN-BEBAS_NEUE_BOLD.otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-BEBAS";
+  src: url("../public/assets/fonts/SVN-BEBAS_NEUE_REGULAR.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+:root,
+[data-theme] {
+  background: #fff;
+}
+
+.text-bold {
+  font-family: "SVN-BEBAS_BOLD";
+}
+
+.text-regular {
+  font-family: "SVN-BEBAS";
+}
+
+.img-wr {
+  display: grid;
+  margin: auto;
+  grid-template-columns: 3fr 1fr;
+  gap: 40px;
+}
+
+.main-img, #print {
+  width: 29.74cm;
+  height: 20.32cm;
+  background-color: #000;
+}
+.text {
+  grid-template-columns: auto auto auto auto;
+}
+
+@media all {
+  .pagebreak {
+    display: none;
+  }
+}
+
+@media print {
+  html,
+  body {
+    height: initial !important;
+    overflow: initial !important;
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+@media print {
+  .pagebreak {
+    display: block;
+    page-break-before: always;
+    margin: 0;
+  }
+
+  @page {
+    size: 29.74cm 20.32cm;
+    margin: 0 0 0 0;
+  }
+}
